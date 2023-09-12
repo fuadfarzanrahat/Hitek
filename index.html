@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preload" href="assets/webfonts">
+  <link rel="stylesheet" href="assets/css/jquery.popup.css">
+  <link rel="stylesheet" href="assets/css/mmenu-light.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="assets/css/stonehenge.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/demo.css"> -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="rush_main">
+    <!-- header section start -->
+    <header class="header" style="background-image: url(assets/image/hdr_bg.png);">
+      <div class="header_overlay">
+        <div class="container">
+          <div class="header_top">
+            <div class="header_logo"><a href="#"><img src="assets/image/logo.png" alt="Hitek"></a></div>
+            <div class="header_menu">
+              <div>
+                <ul class="header_menu_ul">
+                  <li><a href="#">HOME</a></li>
+                  <li class="sub_menu_hover"><a href="#">SERVICES</a><i class="fa-solid fa-angle-down"></i>
+                    <ul class="sub_menu_ul">
+                      <li class="sub_menu_li"><a href="#">ARCHITECTURAL TINTING</a></li>
+                      <li class="sub_menu_li"><a href="#">AUTOMOTIVE TINTING</a></li>
+                      <li class="sub_menu_li"><a href="#">PAINT PROTECTION FILM</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">
+                      GALLERY</a></li>
+                  <li><a href="#">NEWS</a></li>
+                  <li><a href="#">ABOUT US</a></li>
+                  <li><a href="#">SCHEDULE
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- mmenu start -->
+            <div id="page">
+              <div class="headerr">
+                <a href="#menu"><span><i class="fa-solid fa-bars"></i></span></a>
+                <nav id="menu" class="mmenu_nav">
+                  <ul id="mobile_mmenu">
+                    <li class="Selected"><a href="#/">HOME</a></li>
+                    <li>
+                      <span>SERVICE</span>
+                      <ul>
+                        <li><a href="#/">ARCHITECTURAL TINTING</a></li>
+                        <li>
+                          <span>AUTOMOTIVE TINTING</span>
+                        </li>
+                        <li>
+                          <a href="#/">PAINT PROTECTION FILM</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#/">GALLERY</a></li>
+                    <li><a href="#/">NEWS</a></li>
+                    <li><a href="#/">ABOUT US</a></li>
+                    <li><a href="#/">SCHEDULE</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="p_anch">
+              <a href="#" class="lal js__p_start"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="p_body js__p_body js__fadeout"></div>
+            <div class="popup js__popup js__slide_top">
+              <a href="#" class="p_close js__p_close" title="Закрыть">
+                <span></span><span></span>
+              </a>
+              <div class="popup_in_srch">
+                <form style="display: flex;" action="#">
+                  <input type="search" id="popup_in_search" placeholder="Search"><a href="#"
+                    class="search_button">Search</a>
+                </form>
+              </div>
+            </div>
+            <!-- mmenu end -->
+          </div>
+          <!-- swipper start -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swipperr_padding">
+
+                <div class="swiper_overlay">
+                  <!-- <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> -->
+                  <div>
+                    <div class="header_bannar">
+                      <h2 class="bannar_h2">TINT YOUR WINDOWS FOR A</h2>
+                      <h3 class="banner_h3">COOLER RIDE</h3>
+                    </div>
+                    <p class="bannar_p">The Ultimate Upgrade for Your Car. Enhance your comfort, safety, and appearance
+                      with our
+                      professional window tint service.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swipperr_padding">
+                <div class="swiper_overlay">
+                  <!-- <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> -->
+                  <div>
+                    <div class="header_bannar">
+                      <h2 class="bannar_h2">WE ARE INTERESTED WHAT</h2>
+                      <h3 class="banner_h3">YOU WANT</h3>
+                    </div>
+                    <p class="bannar_p">The Ultimate Upgrade for Your Car. Enhance your comfort, safety, and appearance
+                      with our
+                      professional window tint service.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swipperr_padding">
+                <div class="swiper_overlay">
+                  <!-- <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> -->
+                  <div>
+                    <div class="header_bannar">
+                      <h2 class="bannar_h2">OUR AIM IS GIVE YOU</h2>
+                      <h3 class="banner_h3">BEST CAR</h3>
+                    </div>
+                    <p class="bannar_p">The Ultimate Upgrade for Your Car. Enhance your comfort, safety, and appearance
+                      with our
+                      professional window tint service.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swipperr_padding">
+                <div class="swiper_overlay">
+                  <!-- <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> -->
+                  <div>
+                    <div class="header_bannar">
+                      <h2 class="bannar_h2">TRY TO GIVE YOU BERTTER</h2>
+                      <h3 class="banner_h3">EXPERIENCE</h3>
+                    </div>
+                    <p class="bannar_p">The Ultimate Upgrade for Your Car. Enhance your comfort, safety, and appearance
+                      with our
+                      professional window tint service.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- swipper end -->
+        </div>
+      </div>
+    </header>
+
+    <!-- header section end -->
+    <main>
+      <!-- collection of section start -->
+      <section class="collection_of_sec">
+        <div class="container">
+          <div class="c_O_s_row">
+            <h2 class="collection_of">COLLECTION OF</h2>
+            <h3 class="tint_shades">TINT SHADES</h3>
+            <div class="c_o_s_car">
+              <div class="c_o_s_car_one"><img src="assets/image/bannar_car.png" alt="Car"></div>
+              <div class="c_o_s_car_two"><img src="assets/image/hdr_bg.png" alt="Car"></div>
+            </div>
+            <div class="c_o_s_btn">
+              <div class="front_read">
+                <div class="front">
+                  <h3 class="c_o_s_h">FRONT</h3> <a href="#">05</a><a href="#">20</a><a href="#">35</a><a
+                    href="#">50</a><a href="#">70</a>
+                </div>
+                <div class="read">
+                  <h3 class="c_o_s_h">READ</h3> <a href="#">05</a><a href="#">20</a><a href="#">35</a><a
+                    href="#">50</a><a href="#">70</a>
+                </div>
+              </div>
+              <div class="back_wind_sheild">
+                <div class="back">
+                  <h3 class="c_o_s_h">BACK</h3> <a href="#">05</a><a href="#">20</a><a href="#">35</a><a
+                    href="#">50</a><a href="#">70</a>
+                </div>
+                <div class="wind_sheild">
+                  <h3 class="c_o_s_h">WIND</h3> <a href="#">05</a><a href="#">20</a><a href="#">35</a><a
+                    href="#">50</a><a href="#">70</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- collection of section end -->
+      <!-- tint needs section start -->
+      <section class="tint_needs_section" style="background-image: url(assets/image/hdr_bg.png);">
+        <div class="container">
+          <div class="tint_needs_row">
+            <div class="tint_needs_col tint_needs_col_one"><img src="assets/image/bannar_car.png" alt="Car"></div>
+            <div class="tint_needs_col tint_needs_col_two">
+              <h2 class="tint_needs_h2">HERE FOR ALL OF YOUR WINDOW TINT NEEDS!</h2>
+              <p class="tint_need_p">li’s Window Tint proudly provides quality window tint services to customers across
+                central North Carolina. Our tint specialties include automotive and architectural window tint. We
+                understand the desire to have quality tinted windows to both ensure your privacy and to help reduce
+                wasted utility costs from heat exposure in your home or in your place of business. We proudly deliver
+                prompt, five star services and offer an industry leading warranty on the workmanship of all of our tint
+                services that ensures you complete peace-of-mind.</p>
+              <a href="#" class="tint_now_btn">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- tint needs section end -->
+      <!-- tint bottom section start -->
+      <section class="tint_bottom_section" style="background-image: url(assets/image/no_content.png);">
+
+      </section>
+      <!-- tint bottom section end -->
+      <!-- automotive tint section start -->
+      <section class="automotive_tin_section">
+        <div class="container">
+          <div class="automotive_tin_row">
+            <h2 class="automotive_tin_h2">AUTOMOTIVE WINDOW TINT</h2>
+            <p class="automotive_tin_p">At HITEK’s Window Tint, we are dedicated to transforming your driving experience
+              with our high-quality automotive window film and professional installations. With our expertise and the
+              exceptional quality of Hitek Films, we guarantee a superior tint
+            </p>
+            <a href="#" class="tint_now_btn">READ MORE</a>
+          </div>
+        </div>
+      </section>
+      <!-- automotive tint section end -->
+      <!-- architectural window tin section start -->
+      <section class="architectural_window" style="background-image: url(assets/image/archi_bg.png);">
+        <div class="bg_overlay">
+          <div class="architectural_img">
+            <img src="assets/image/archi_bg.png" alt="architectural image">
+          </div>
+          <div class="archetectural_row">
+            <div class="architectural_col_one"></div>
+            <div class="architectural_col architectural_col_two">
+              <h2 class="archetectural_h">ARCHITECTURAL</h2>
+              <h1 class="architectural_h1">WINDOW TINT</h1>
+              <p class="architectural_p">Our Architectural Window Tint Installation Service provides a cutting-edge
+                solution to enhance the functionality and aesthetics of your windows, transforming them into
+                sophisticated architectural features. With our professional expertise and premium-grade</p>
+              <a href="#" class="tint_now_btn">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- architectural window tin section end -->
+      <!-- paint protection section start -->
+      <section class="paint_protection_section" style="background-image: url(assets/image/film.png);">
+        <div class="container">
+          <div class="paint_protection_row">
+            <h2 class="paint_h">PAINT</h2>
+            <h3 class="protection_h">PROTECTION</h3>
+            <h3 class="film_h">FILM</h3>
+            <p class="pain_protec_p">Introducing our premium Paint Protection Film (PPF) automotive installation
+              service, designed to safeguard your vehicle’s paintwork and keep it looking flawless for years to come.
+              Our skilled team of professionals utilizes cutting-edge technology and indu</p>
+            <a href="#" class="tint_now_btn">READ MORE</a>
+          </div>
+        </div>
+      </section>
+      <!-- paint protection section start -->
+      <!-- gallery section start -->
+      <section class="galley_section">
+        <div class="containerr">
+          <div class="photo_galley_box">
+            <div class="p_g_heading" style="background-image: url(assets/image/p_g.png);">
+              <div class="p_g_overlay">
+                <h2 class="s_o_p_h">SEE OUR PHOTO GALLERY</h2>
+              </div>
+            </div>
+            <div class="p_g_image" style="background-image: url(assets/image/g_im.png);"></div>
+          </div>
+          <div class="view_more_box">
+            <div class="view_more_heding" style="background-image: url(assets/image/v_m.png);">
+              <div class="p_g_overlay">
+                <h3 class="v_m_h">VIEW MORE</h3>
+              </div>
+            </div>
+            <div class="view_more_image" style="background-image: url(assets/image/vm_im.png);"></div>
+          </div>
+        </div>
+      </section>
+      <!-- gallery section end -->
+      <!-- contact us section start -->
+      <section class="contact_us_sec">
+        <div class="container">
+          <div class="contact_us_row">
+            <div class="phone_col contact_col">
+              <a href="#"><i class="fa-solid fa-phone"></i></a>
+              <a href="#">+18322209672</a>
+            </div>
+            <div class="phone_col contact_col">
+              <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              <a href="#">tintservice@mail.com</a>
+            </div>
+            <div class="web_col contact_col">
+              <a href="#"><i class="fa-solid fa-globe"></i></a>
+              <a href="#">
+                automotiveamerican.com</a>
+            </div>
+            <div class="phone_col contact_col">
+              <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+              <a href="#">Houston, TX</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact us section end -->
+      <!-- testimonial section start -->
+      <section class="testimonial_sec" style="background-image: url(assets/image/vm_im.png);">
+        <div class="testmonial_for_overlay">
+          <div class="container">
+            <div class="testimonial_row">
+              <div class="swiper mytestmoSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper_width">
+                    <div class="slider_contentt testmo_swiper">
+                      <div class="slider_heading">
+                        <a href="#">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </div>
+                      <p class="slider_p">The Ultimate Upgrade for Your Car. Enhance your comfort, safety, and
+                        appearance
+                        with our
+                        professional window tint service.</p>
+                      <h2 class="slider_h2">TINT YOUR WINDOWS FOR A</h2>
+                    </div>             
+                  </div>
+                  <div class="swiper-slide swiper_width">
+                    <div class="slider_contentt testmo_swiper">
+                      <div class="slider_heading">
+                        <a href="#">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </div>
+                      <p class="slider_p">The Ultimate Upgrade for Your Car. Enhance your comfort, safety, and
+                        appearance
+                        with our
+                        professional window tint service.</p>
+                      <h2 class="slider_h2">TINT YOUR WINDOWS FOR A</h2>
+                    </div>             
+                  </div>
+                  <div class="swiper-slide swiper_width">
+                    <div class="slider_contentt testmo_swiper">
+                      <div class="slider_heading">
+                        <a href="#">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </div>
+                      <p class="slider_p">The Ultimate Upgrade for Your Car. Enhance your comfort, safety, and
+                        appearance
+                        with our
+                        professional window tint service.</p>
+                      <h2 class="slider_h2">TINT YOUR WINDOWS FOR A</h2>
+                    </div>             
+                  </div>
+                  <div class="swiper-slide swiper_width">
+                    <div class="slider_contentt testmo_swiper">
+                      <div class="slider_heading">
+                        <a href="#">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </div>
+                      <p class="slider_p">The Ultimate Upgrade for Your Car. Enhance your comfort, safety, and
+                        appearance
+                        with our
+                        professional window tint service.</p>
+                      <h2 class="slider_h2">TINT YOUR WINDOWS FOR A</h2>
+                    </div>             
+                  </div>
+                  <div class="swiper-slide swiper_width">
+                    <div class="slider_contentt testmo_swiper">
+                      <div class="slider_heading">
+                        <a href="#">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </div>
+                      <p class="slider_p">The Ultimate Upgrade for Your Car. Enhance your comfort, safety, and
+                        appearance
+                        with our
+                        professional window tint service.</p>
+                      <h2 class="slider_h2">TINT YOUR WINDOWS FOR A</h2>
+                    </div>         
+                  </div>
+                  <div class="swiper-slide swiper_width">
+                    <div class="slider_contentt testmo_swiper">
+                      <div class="slider_heading">
+                        <a href="#">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </div>
+                      <p class="slider_p">The Ultimate Upgrade for Your Car. Enhance your comfort, safety, and
+                        appearance
+                        with our
+                        professional window tint service.</p>
+                      <h2 class="slider_h2">TINT YOUR WINDOWS FOR A</h2>
+                    </div>            
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial section end -->
+    </main>
+    <!-- footer start -->
+    <footer class="footer_sec">
+      <div class="container">
+        <div class="footer_row">
+          <span class="footer_span">Copyright 2023 — Automotive. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </div>
+  <!-- mmenu js start -->
+  <script src="assets/js/mmenu-light.js"></script>
+  <script>
+    var menu = new MmenuLight(document.querySelector("#menu"), "all");
+    var navigator = menu.navigation({
+      // selectedClass: 'Selected',
+      // slidingSubmenus: true,
+      // theme: 'dark',
+      // title: 'Menu'
+    });
+    var drawer = menu.offcanvas({
+      // position: 'left'
+    });
+    //	Open the menu.
+    document
+      .querySelector('a[href="#menu"]')
+      .addEventListener("click", (evnt) => {
+        evnt.preventDefault();
+        drawer.open();
+      });
+  </script>
+  <!-- mmenu js end -->
+  <!-- search popup start -->
+  <script type="text/javascript">
+    $(function () {
+      $(".js__p_start, .js__p_another_start").simplePopup();
+    });
+  </script>
+  <!-- search popup end -->
+  <!-- swiper slider js start -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- and -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      // slidesPerView: 2,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop:true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+    <script>
+      // var swiper = new Swiper(".mytestmoSwiper", {
+      //   slidesPerView: 2,
+      //   spaceBetween: 30,
+      //   centeredSlides: true,
+      //   loop:true,
+      //   autoplay: {
+      //     delay: 2500,
+      //     disableOnInteraction: false,
+      //   },
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     clickable: true,
+      //   },
+      //   navigation: {
+      //     nextEl: ".swiper-button-next",
+      //     prevEl: ".swiper-button-prev",
+      //   },
+      // });
+      var swiper = new Swiper(".mytestmoSwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    </script>
+    
+  <!-- swiper slider js end -->
+  <!-- search popup start  -->
+  <script src="assets/js/jquery.popup.js"></script>
+  <!-- search popup end -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

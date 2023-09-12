@@ -1,0 +1,59 @@
+.stonehenge {  
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(1);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+  scroll-behavior: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-top: 100px;
+}
+.stonehenge::-webkit-scrollbar {
+  display: none;
+}
+.stonehenge.is-grabbed {
+  cursor: grabbing;
+  transform: scale(1.02);
+}
+.stonehenge > * {
+  width: 100%;
+  display: inline-block;
+  white-space: normal;
+  text-align: left;
+  vertical-align: middle;
+  /* margin-left: 1rem; */
+  margin-right: 1rem;
+  padding-left: 50px;
+ /* margin-top: 100px; */
+}
+.stonehenge.is-valigned-top > * {
+  vertical-align: top;
+}
+.stonehenge.is-valigned-middle > * {
+  vertical-align: middle;
+}
+.stonehenge.is-valigned-bottom > * {
+  vertical-align: bottom;
+}
+.stonehenge.zigzag {
+  padding: 2rem 0;
+}
+.stonehenge.zigzag > * {
+  position: relative;
+}
+.stonehenge.zigzag > *:nth-child(odd) {
+  top: -1.5rem;
+}
+.stonehenge.zigzag > *:nth-child(even) {
+  bottom: -1.5rem;
+}
+
+
+/*# sourceMappingURL=stonehenge.css.map */
