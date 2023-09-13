@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -208,22 +207,29 @@
             <div class="c_o_s_btn">
               <div class="front_read">
                 <div class="front">
-                  <h3 class="c_o_s_h">FRONT</h3> <a href="#">05</a><a href="#">20</a><a href="#">35</a><a
-                    href="#">50</a><a href="#">70</a>
+                  <h3 class="c_o_s_h c_o_h_padding">FRONT</h3>               
+                    <div class="c_o_s_bttn">
+                      <button> <a href="#">05</a></button> <button> <a href="#">20</a></button> <button> <a href="#">35</a></button> <button> <a href="#">50</a></button> <button><a href="#">70</a></button>
+                    </div>
                 </div>
                 <div class="read">
-                  <h3 class="c_o_s_h">READ</h3> <a href="#">05</a><a href="#">20</a><a href="#">35</a><a
-                    href="#">50</a><a href="#">70</a>
+                  <h3 class="c_o_s_h c_o_h_padding">READ</h3> 
+                  <div class="c_o_s_bttn">
+                    <button> <a href="#">05</a></button> <button> <a href="#">20</a></button> <button> <a href="#">35</a></button> <button> <a href="#">50</a></button> <button><a href="#">70</a></button>
+                  </div>
                 </div>
               </div>
               <div class="back_wind_sheild">
                 <div class="back">
-                  <h3 class="c_o_s_h">BACK</h3> <a href="#">05</a><a href="#">20</a><a href="#">35</a><a
-                    href="#">50</a><a href="#">70</a>
+                  <h3 class="c_o_s_h c_o_h_padding">BACK</h3> 
+                  <div class="c_o_s_bttn">
+                    <button> <a href="#">05</a></button> <button> <a href="#">20</a></button> <button> <a href="#">35</a></button> <button> <a href="#">50</a></button> <button><a href="#">70</a></button>
+                  </div>
                 </div>
                 <div class="wind_sheild">
-                  <h3 class="c_o_s_h">WIND</h3> <a href="#">05</a><a href="#">20</a><a href="#">35</a><a
-                    href="#">50</a><a href="#">70</a>
+                  <h3 class="c_o_s_h">WIND SHIEED</h3>         <div class="c_o_s_bttn">
+                    <button> <a href="#">40</a></button> <button> <a href="#">70</a></button> <button> <a href="#">80</a></button> 
+                  </div>
                 </div>
               </div>
             </div>
@@ -291,6 +297,7 @@
       <!-- architectural window tin section end -->
       <!-- paint protection section start -->
       <section class="paint_protection_section" style="background-image: url(assets/image/film.png);">
+        <div class="paint_overlay">
         <div class="container">
           <div class="paint_protection_row">
             <h2 class="paint_h">PAINT</h2>
@@ -302,6 +309,7 @@
             <a href="#" class="tint_now_btn">READ MORE</a>
           </div>
         </div>
+      </div>
       </section>
       <!-- paint protection section start -->
       <!-- gallery section start -->
@@ -326,31 +334,6 @@
         </div>
       </section>
       <!-- gallery section end -->
-      <!-- contact us section start -->
-      <section class="contact_us_sec">
-        <div class="container">
-          <div class="contact_us_row">
-            <div class="phone_col contact_col">
-              <a href="#"><i class="fa-solid fa-phone"></i></a>
-              <a href="#">+18322209672</a>
-            </div>
-            <div class="phone_col contact_col">
-              <a href="#"><i class="fa-solid fa-envelope"></i></a>
-              <a href="#">tintservice@mail.com</a>
-            </div>
-            <div class="web_col contact_col">
-              <a href="#"><i class="fa-solid fa-globe"></i></a>
-              <a href="#">
-                automotiveamerican.com</a>
-            </div>
-            <div class="phone_col contact_col">
-              <a href="#"><i class="fa-solid fa-location-dot"></i></a>
-              <a href="#">Houston, TX</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- contact us section end -->
       <!-- testimonial section start -->
       <section class="testimonial_sec" style="background-image: url(assets/image/vm_im.png);">
         <div class="testmonial_for_overlay">
@@ -476,7 +459,33 @@
         </div>
       </section>
       <!-- testimonial section end -->
+            <!-- contact us section start -->
+            <section class="contact_us_sec">
+              <div class="container">
+                <div class="contact_us_row">
+                  <div class="phone_col contact_col">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#">+18322209672</a>
+                  </div>
+                  <div class="phone_col contact_col">
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#">tintservice@mail.com</a>
+                  </div>
+                  <div class="web_col contact_col">
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#">
+                      automotiveamerican.com</a>
+                  </div>
+                  <div class="phone_col contact_col">
+                    <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                    <a href="#">Houston, TX</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- contact us section end -->
     </main>
+
     <!-- footer start -->
     <footer class="footer_sec">
       <div class="container">
@@ -540,35 +549,39 @@
     });
   </script>
     <script>
-      // var swiper = new Swiper(".mytestmoSwiper", {
-      //   slidesPerView: 2,
-      //   spaceBetween: 30,
-      //   centeredSlides: true,
-      //   loop:true,
-      //   autoplay: {
-      //     delay: 2500,
-      //     disableOnInteraction: false,
-      //   },
-      //   pagination: {
-      //     el: ".swiper-pagination",
-      //     clickable: true,
-      //   },
-      //   navigation: {
-      //     nextEl: ".swiper-button-next",
-      //     prevEl: ".swiper-button-prev",
-      //   },
-      // });
-      var swiper = new Swiper(".mytestmoSwiper", {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      freeMode: true,
+      var swiper = new Swiper(".mytestmoSwiper", {   
+      autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@1.75": {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        "@2.00": {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        "@3.5": {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
     });
-    </script>
-    
+    </script>        
   <!-- swiper slider js end -->
   <!-- search popup start  -->
   <script src="assets/js/jquery.popup.js"></script>

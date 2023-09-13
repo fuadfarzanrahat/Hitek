@@ -393,102 +393,102 @@ $third_color:#605758;
         }
     }
 }
-.c_o_s_btn {
-    padding-top: 30px;
-    margin: auto;
-    a {
-        display: block;
-        padding: 5px 10px 0px 10px;
-        text-decoration: none;
-        color: #ffffff;
-        margin: 0px 5px;
-        @include minwidth(600px) {
-            font-size: 12px;
-            padding: 5px 10px 0px 10px;
-        }
-        @include minwidth(992px) {
-            padding: 15px 20px 5px 20px;
-            font-size: initial;
-        }
-        @include minwidth(1200px) {
-            margin: 0px 10px;
-        }
-    }
-}
 .front_read {
-    padding-bottom: 0px;
-    @include minwidth(600px) {
+    @include minwidth(768px) {
         display: flex;
         margin: auto;
     }
-    @include minwidth(992px) {
-        padding-bottom: 20px;
-    }
+    padding-bottom: 10px;
     .front,
     .read {
         display: flex;
-        width: 50%;
-        padding-bottom: 10px;
+        width: 100%;   
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        @include minwidth(768px) {
+         width: 50%;
+           }
         @include minwidth(992px) {
-            padding-bottom: initial;
-        }
-        a {
-            background-color: $third_color;         
-            &:hover {
-                background-color: #ce0000;
-            }
+         overflow-x: unset;
         }
     }
 }
+.c_o_s_btn {  
+    margin: auto;
+    padding: 50px 10px;
+    a {
+        display: block;        
+        text-decoration: none;
+        color: #ffffff;  
+        font-family: Roboto;
+        font-size: 15px           
+    }
+    @include minwidth(768px) {
+      a{
+        font-size: 20px;
+      }
+       }
+}
+.read,.wind_sheild{
+   @include minwidth(768px) {
+    margin-left: 20px;
+   }   
+} 
+.front,.back{
+    padding-bottom: 10px;
+    @include minwidth(768px) {
+       padding-bottom: initial;
+       }   
+}
+
+.c_o_s_h{         
+    display: block;
+    min-width: 20%;   
+    // margin: 0px;    
+    margin: 0px 10px 0px 0px; 
+    padding: 0px; 
+    font-size: 17px;
+    @include minwidth(768px) {
+        font-size: 20px;
+       } 
+} 
+.c_o_h_padding{
+    padding-top: 10px;
+}
+
+.c_o_s_bttn{
+    min-width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    button{
+       padding: 5px 10px;
+       background-color: $third_color;
+       margin-right: 10px;
+       &:hover {
+        background-color: $primary-color;
+    }
+    &:last-child{
+        background-color: $primary-color;
+    }
+    }       
+   }
 .back_wind_sheild {
-    @include minwidth(600px) {
+    @include minwidth(768px) {
         display: flex;
         margin: auto;
     }
     .back,
     .wind_sheild {
         display: flex;
-        width: 50%;
-        padding-bottom: 10px;
+        width: 100%;   
+        flex-wrap: nowrap;
+        overflow-x: auto;  
+        @include minwidth(768px) {
+            width: 50%;
+           } 
         @include minwidth(992px) {
-            padding-bottom: initial;
-        }
-        a {
-            background-color: #605758;
-            &:hover {
-                background-color: #ce0000;
-            }
-        }
-    }
-}
-
-.c_o_s_h {
-    font-size: 14px;
-    width: 30px;
-    margin: 0px 20px 0px 0px;
-    padding-top: 5px;
-
-    @include minwidth(600px) {
-        margin: 0px 10px 0px 0px;
-        font-size: 11px;
-    }
-    @include minwidth(992px) {
-        font-size: 18px;
-        margin: 0px 20px 0px 0px;
-        width: 50px;
-        padding-top: 10px;
-    }
-    @include minwidth(1200px) {
-        margin: 0px 50px 0px 0px;
-    }
-}
-.wind_sheild,
-.read {
-    @include minwidth(600px) {
-        margin-left: 10px;
-    }
-    @include minwidth(992px) {
-        margin-left: initial;
+            overflow-x: unset;
+           }        
     }
 }
 .tint_needs_section {
@@ -675,7 +675,10 @@ $third_color:#605758;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    background-attachment: fixed;
+    .paint_overlay{
+        background-color: #00000074;
+    }
     .paint_protection_row {
         max-width: 1120px;
         margin: auto;
@@ -879,6 +882,7 @@ $third_color:#605758;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;    
+    background-attachment: fixed;
     .testmonial_for_overlay{
         background-color: #00000074;
     }
@@ -893,15 +897,13 @@ $third_color:#605758;
         }
     }
 }
+
 .testmo_swiper{
-    width: 100%!important;
-    // padding: 50px 10px 50px 10px ;
-    @include minwidth(768px) {
-        padding: 0px 00px 100px 0px ;
+    width: 100%!important;  
+       padding: 100px 0px;
+       @include minwidth(768px) {
+       padding: 100px 70px 100px 70px;
     }
-    // @include minwidth(992px) {
-    //                 width: 50%!important; 
-    //             }
 }
 .slider_heading{
     a{
@@ -936,3 +938,4 @@ $third_color:#605758;
 // wappalyzar
 // bs modal
 // sticky header
+// git
