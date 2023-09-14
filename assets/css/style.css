@@ -61,11 +61,6 @@
 .header_logo img {
   width: 100%;
 }
-@media only screen and (min-width: 600px) {
-  .header_logo img {
-    width: 100%;
-  }
-}
 @media only screen and (min-width: 992px) {
   .header_logo img {
     width: 50%;
@@ -671,9 +666,13 @@
   font-family: Montserrat;
   text-decoration: none;
   padding: 10px 45px;
-  background: linear-gradient(to right, #ce0000, #870909);
+  background-image: linear-gradient(to right, #ce0000, #870909);
   -webkit-clip-path: polygon(10% 0, 94% 0, 88% 100%, 2% 100%);
           clip-path: polygon(10% 0, 94% 0, 88% 100%, 2% 100%);
+}
+.tint_now_btn:hover {
+  background-image: linear-gradient(to right, #fffefe, #c8c5c5);
+  color: #f80d0d;
 }
 
 .tint_bottom_section {
