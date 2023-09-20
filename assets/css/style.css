@@ -52,7 +52,7 @@
   }
 }
 .header .header_overlay {
-  background-color: rgba(0, 0, 0, 0.8784313725);
+  background-color: #000000;
 }
 
 .header_logo {
@@ -114,7 +114,7 @@
   }
 }
 .p_anch i {
-  color: white;
+  color: #ffffff;
 }
 
 .p_close {
@@ -158,7 +158,7 @@
   text-decoration: none;
   font-size: 16px;
   background-color: #f80d0d;
-  color: white;
+  color: #ffffff;
   padding: 10px 10px;
 }
 @media only screen and (min-width: 600px) {
@@ -188,10 +188,8 @@
   color: #ffffff;
   font-family: Montserrat;
   padding: 2px 0px;
-  transition: all 0.5s ease-out;
 }
 .header_menu_ul a:hover {
-  border-bottom: 2px solid;
   color: #f80d0d;
 }
 
@@ -199,7 +197,7 @@
   position: relative;
 }
 .sub_menu_hover i {
-  color: white;
+  color: #ffffff;
   font-size: 10px;
   padding-left: 4px;
 }
@@ -223,7 +221,7 @@
   text-decoration: none;
 }
 .sub_menu_hover .sub_menu_ul .sub_menu_li:hover {
-  background-color: #c60e0e;
+  background-color: #f80d0d;
 }
 .sub_menu_hover .sub_menu_ul .sub_menu_li:hover a {
   color: #ffffff;
@@ -271,7 +269,26 @@
   color: #ffffff;
 }
 #mobile_mmenu li:hover {
-  color: #c60e0e;
+  color: #f80d0d;
+}
+
+.for_transition .transition_a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 17%;
+  height: 2px;
+  background: #f80d0d;
+  border-radius: 12px;
+  width: 70%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+
+.for_transition .transition_a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .header_bannar {
