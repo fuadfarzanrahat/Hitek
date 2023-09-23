@@ -579,15 +579,18 @@
   display: flex;
   flex-wrap: nowrap;
 }
-.c_o_s_bttn button {
+.c_o_s_bttn .buttn {
+  display: flex;
+  align-items: center;
   padding: 5px 10px;
   background-color: #605758;
   margin-right: 10px;
+  height: 40px;
 }
-.c_o_s_bttn button:hover {
+.c_o_s_bttn .buttn:hover {
   background-color: #f80d0d;
 }
-.c_o_s_bttn button:last-child {
+.c_o_s_bttn .buttn:last-child {
   background-color: #f80d0d;
 }
 
@@ -636,7 +639,7 @@
   width: 100%;
   text-align: center;
   color: white;
-  font-family: Montserrat;
+  font-family: "Montserrat";
 }
 @media only screen and (min-width: 992px) {
   .tint_needs_section .tint_needs_row .tint_needs_col {

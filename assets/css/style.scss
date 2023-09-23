@@ -482,10 +482,13 @@ min-height: 300px;
     display: flex;
     flex-wrap: nowrap;
  
-    button{
+    .buttn{
+        display: flex;
+        align-items: center;
        padding: 5px 10px;
        background-color: $third_color;
        margin-right: 10px;
+       height: 40px;
        &:hover {
         background-color: $primary-color;
     }
@@ -528,7 +531,7 @@ min-height: 300px;
             width: 100%;
             text-align: center;
             color: white;
-            font-family: Montserrat;
+            font-family: 'Montserrat';
             @include minwidth(992px) {
                 width: 50%;
             }
